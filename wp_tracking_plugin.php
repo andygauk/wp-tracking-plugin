@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: URL Parameter Appender
-Plugin URI: https://your-plugin-url.com
+Plugin URI: https://isitablog.com
 Description: Appends a URL parameter to every external link on your website.
 Version: 1.0
 Author: Andy Gaukrodger
@@ -28,7 +28,7 @@ function append_url_parameter_to_external_links() {
                     // Check if the link is external
                     if (link.href.indexOf('" . esc_url($site_url) . "') === -1) {
                         // Append the URL parameter to the external link
-                        link.href = link.href + '&source=isitablog.com';
+                        link.href = link.href + '?source=isitablog.com';
                     }
                 }
             });
